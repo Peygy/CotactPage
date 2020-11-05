@@ -1,0 +1,329 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(85, 62, 139);
+    color: whitesmoke;
+}
+li
+{
+    display: inline-block;
+    margin: 0 25px 0 25px;
+}
+ol
+{
+    margin: 30px 40px 30px 40px;
+    font-size: 1.6em;
+}
+main > div 
+{
+    margin: 0;
+}
+.icons
+{
+    display: flex;
+}
+.logo
+{
+    display: flex;
+    font-size: 2.2em;
+    margin-right: 100px;
+}
+
+.main-head
+{
+    display: flex;
+    height: 40rem;
+    align-items: center;
+    background-color: rgb(85, 62, 139); 
+}
+.main-two-collumns 
+{
+    display: block;
+    width: 100%;
+    height: 35rem;
+
+}
+.main-services
+{
+    display: block;
+    height: 50rem;
+}
+.main-feedback
+{
+    display: block;
+    height: 30rem;
+}
+.main-clients
+{
+    display: block;
+    height: 40rem;
+}
+address
+{
+    display: block;
+    height: 10rem;
+    background-color: rgb(28, 151, 160);
+}
+footer
+{
+    display: block;
+    height: 10rem;
+    background-color: rgb(61, 61, 61);
+}
+h1
+{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+h2
+{
+    font-size: 2.5em;
+    margin-bottom: 8px;
+    color: white;
+}
+h3
+{
+    text-align: center;
+    margin: 10px;
+}
+h4
+{
+    font-size: 1.2em;
+    margin: 8px 0 8px 0;
+}
+.white-solid
+{
+    border-top: 1px solid white; 
+    margin: 0;
+}
+.white-solid-main
+{
+    border-color: white; 
+    z-index: 3; 
+    width: 500px;
+}
+
+#aim
+{
+    font-size: 1.7em;
+    color: white;
+}
+.left-aim
+{
+    display: block;
+    margin-left: 40px;
+    float: left;
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+.right-aim
+{
+    display: block;
+    margin-right: 40px;
+    float: right;
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+.main-info
+{
+    display: block;
+    margin: 0 25rem 0 25rem;
+    width: auto;
+    height: auto;
+    color: white;
+    text-align: center;
+}
+.hire-us
+{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 150px;
+
+}
+
+.collumns-one
+{
+    display: block;
+    margin: 0;
+    width: 50%;
+    height: 35rem;
+    float: left;
+}
+.collumns-two
+{
+    display: block;
+    width: 50%;
+    height: 35rem;
+    float: left;
+}
+
+.service
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(51, 51, 51);
+}
+.services-select
+{
+    display: block;
+    width: 33.33%;
+    height: 40rem;
+    float: left;
+    background-color: rgb(61, 61, 61);
+}
+
+.feed
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(51, 51, 51);
+}
+.feed-main
+{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(61, 61, 61);
+}
+.feed-description
+{
+    display: block;
+    padding: 70px 100px 15px 100px;
+    width: 18%;
+    text-align: center;
+    font-size: 1.7em;
+    color: lightgray;
+}
+
+.clients
+{
+    display: block;
+    width: 100%;
+    height: 10rem;
+    background-color: whitesmoke;
+}
+.clients-main
+{
+    display: block;
+    width: 100%;
+    height: 30rem;
+}
+.about
+{
+    display: block;
+    margin: 50px 90px 60px;
+    width: auto;
+}
+.line-widht
+{
+    display: block;
+    border: 2px solid black;
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    border-radius: 50px;
+}
+hr
+{
+    margin: 0;
+}
+.hr-feed
+{
+    margin: 20px 40% 20px 40%;
+    width: auto;
+}
+.text-collumns
+{
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+.button-collumns
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    width: 200px;
+    font-size: 0.6em;
+    color: white;
+    border-radius: 3px;
+    background-color:  rgb(28, 151, 160);
+}
+.button-services
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 55px;
+    width: 200px;
+    font-size: 1em;
+    color: white;
+    border-radius: 3px;
+    background-color:  rgb(109, 109, 109);
+}
+.head-text-left
+{
+    display: block;
+    float: left;
+    margin-top: 40px;
+}
+.head-text-right
+{
+    display: block;
+    float: right;
+    margin-top: 40px;
+}
+.h2-head
+{
+    display: block;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+}
+.h2-head-feed
+{
+    display: block;
+    justify-content: center;
+    margin: 0 60px 0 60px;
+}
+.h2-services
+{
+    font-size: 2em;
+    text-align: center;
+}
+.p-services
+{
+    margin: 0 40px 0 40px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+.icon-laptop
+{
+    display: flex;
+    justify-content: center;
+    margin: 150px 0 50px 0;
+    font-size: 6em;
+    color: white;
+}
