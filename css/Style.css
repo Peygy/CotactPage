@@ -17,7 +17,7 @@ li
     display: inline-block;
     margin: 0 25px 0 25px;
 }
-ol
+ul
 {
     margin: 30px 40px 30px 40px;
     font-size: 1.6em;
@@ -36,7 +36,19 @@ main > div
     font-size: 2.2em;
     margin-right: 100px;
 }
+div[class^="logo"]
+{
+    display: inline-flex;
+}
+#go-p
+{
+    color: rgb(212, 28, 120);
+}
 
+#more
+{
+    font-size: 1.1em;
+}
 .main-head
 {
     display: flex;
@@ -64,19 +76,27 @@ main > div
 .main-clients
 {
     display: block;
-    height: 40rem;
+    height: 50rem;
 }
-address
+.main-call
 {
-    display: block;
-    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    color: white;
     background-color: rgb(28, 151, 160);
 }
 footer
 {
     display: block;
-    height: 10rem;
+    height: 15rem;
     background-color: rgb(61, 61, 61);
+}
+p
+{
+    margin: 0;
+    padding: 0;
 }
 h1
 {
@@ -85,6 +105,7 @@ h1
 }
 h2
 {
+    margin: 0;
     font-size: 2.5em;
     margin-bottom: 8px;
     color: white;
@@ -98,6 +119,25 @@ h4
 {
     font-size: 1.2em;
     margin: 8px 0 8px 0;
+}
+
+div[class^="head-text-right"] hr[class^="line-widht"]
+{
+    border-color:white;
+}
+div[class^="head-text-left"] hr[class^="line-widht"]
+{
+    border-color:white;
+    margin-left: 400px;
+}
+div[class^="clients"] div[class^="head-text-right"] hr[class^="line-widht"]
+{
+    border-color:rgb(82, 82, 82);
+}
+div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
+{
+    border-color: rgb(82, 82, 82);
+    margin-left: 400px;
 }
 .white-solid
 {
@@ -188,6 +228,7 @@ h4
     width: 33.33%;
     height: 40rem;
     float: left;
+    text-align: center;
     background-color: rgb(61, 61, 61);
 }
 
@@ -203,7 +244,9 @@ h4
 }
 .feed-main
 {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 20rem;
     background-color: rgb(61, 61, 61);
@@ -211,16 +254,23 @@ h4
 .feed-description
 {
     display: block;
-    padding: 70px 100px 15px 100px;
     width: 18%;
+    margin-right: 200px;
     text-align: center;
     font-size: 1.7em;
     color: lightgray;
 }
+.feed-people
+{
+    display: block;
+}
 
 .clients
 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
     width: 100%;
     height: 10rem;
     background-color: whitesmoke;
@@ -229,12 +279,14 @@ h4
 {
     display: block;
     width: 100%;
-    height: 30rem;
+    height: 40rem;
+    background-image: url(https://ilenta.com/netcat_files/445/315/partner_logos_complete620.jpg);
+    background-size: cover;
 }
 .about
 {
     display: block;
-    margin: 50px 90px 60px;
+    margin: 50px 100px 60px 90px;
     width: auto;
 }
 .line-widht
@@ -264,7 +316,7 @@ hr
 {
     display: flex;
     justify-content: center;
-    margin-top: 55px;
+    margin-top: 35px;
     width: 200px;
     font-size: 0.6em;
     color: white;
@@ -286,26 +338,33 @@ hr
 .head-text-left
 {
     display: block;
-    float: left;
     margin-top: 40px;
+}
+.client-head-line
+{
+    border-color: black;
+    width: 500px;
 }
 .head-text-right
 {
     display: block;
-    float: right;
     margin-top: 40px;
 }
 .h2-head
 {
     display: block;
-    justify-content: center;
     margin: 0 20px 0 20px;
 }
 .h2-head-feed
 {
     display: block;
-    justify-content: center;
     margin: 0 60px 0 60px;
+}
+.h2-client
+{
+    display: block;
+    color: rgb(82, 82, 82);
+    margin: 0 70px 0 70px;
 }
 .h2-services
 {
@@ -326,4 +385,132 @@ hr
     margin: 150px 0 50px 0;
     font-size: 6em;
     color: white;
+}
+
+#z-ind
+{
+    z-index: 3;
+}
+div[class^="about"] h2
+{
+    color: black;
+}
+.aims
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.icon-left-open
+{
+    float: left;
+}
+.icon-right-open
+{
+    float: right;
+}
+#img
+{
+    display: inline-block;
+    margin: 0 30px 0 30px;
+    width: 230px;
+    height: 280px;
+    background-image: url(https://static.wikia.nocookie.net/zlodei/images/9/9c/Darth_vader_lightsaber-11326.jpg/revision/latest/top-crop/width/360/height/450?cb=20140719020038&path-prefix=ru);
+}
+#into-img
+{
+    margin: 220px 0 5px 10px;
+}
+#into-img-1
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background: whitesmoke;
+    color: black;
+}
+#into-img-2
+{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background: whitesmoke;
+    color: black;
+}
+#p-img
+{
+    float: left;
+}
+
+.call-line
+{
+    display: inline-block;
+    margin: 0 15px 0 15px;
+    border: 1px solid white;
+    width: 0;
+    height: 25px;
+}
+h2
+{
+    display: inline-block;
+}
+div[class^="call-text"] p
+{
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+div[class^="call-text"] p[class^="p-call"]
+{
+    margin-top: 25px;
+}
+.get-call
+{
+    display: block;
+    float: right;
+    margin-left: 100px;
+}
+input, button
+{
+    outline: none;
+    background: transparent;
+}
+input
+{
+    display: inline-flex;
+    padding: 0;
+    margin-left: -5px;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid whitesmoke;
+    font-size: 1em;
+    color: white;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 300px;
+    height: 60px;
+}
+#second-call
+{
+    border-radius: 0;
+}
+button
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    font-size: 1.1em;
+    border: 1px solid whitesmoke;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: whitesmoke;
+    color:  rgb(28, 151, 160);
+    width: 100px;
+    height: 62px;
+    cursor: pointer;
 }
