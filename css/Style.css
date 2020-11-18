@@ -14,13 +14,17 @@ header
 }
 li
 {
+    list-style-type: none;
+}
+ul[class^="main-menu"] li
+{
     display: inline-block;
     margin: 0 25px 0 25px;
 }
 ul
 {
-    margin: 30px 40px 30px 40px;
-    font-size: 1.6em;
+    text-decoration: none;
+    padding: 0;
 }
 main > div 
 {
@@ -29,18 +33,21 @@ main > div
 .icons
 {
     display: flex;
+    margin: 30px 40px 30px 40px;
+    font-size: 1.6em;
 }
 .logo
 {
     display: flex;
     font-size: 2.2em;
     margin-right: 100px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 div[class^="logo"]
 {
     display: inline-flex;
 }
-#go-p
+#p-logo-element-go
 {
     color: rgb(212, 28, 120);
 }
@@ -54,6 +61,7 @@ div[class^="logo"]
     display: flex;
     height: 40rem;
     align-items: center;
+    justify-content: center;
     background-color: rgb(85, 62, 139); 
 }
 .main-two-collumns 
@@ -89,19 +97,27 @@ div[class^="logo"]
 }
 footer
 {
-    display: block;
-    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
     background-color: rgb(61, 61, 61);
 }
 p
 {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#text-collumns-space
+{
+    margin-top: 20px;
 }
 h1
 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h2
 {
@@ -109,11 +125,14 @@ h2
     font-size: 2.5em;
     margin-bottom: 8px;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h3
 {
+    padding-top: 5px;
     text-align: center;
     margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h4
 {
@@ -136,7 +155,7 @@ div[class^="clients"] div[class^="head-text-right"] hr[class^="line-widht"]
 }
 div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
 {
-    border-color: rgb(82, 82, 82);
+    border-color:rgb(82, 82, 82);
     margin-left: 400px;
 }
 .white-solid
@@ -153,14 +172,14 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
 
 #aim
 {
-    font-size: 1.7em;
+    margin: 0 2px 2px 0;
+    font-size: 1.6em;
     color: white;
 }
 .left-aim
 {
-    display: block;
+    display: block;   
     margin-left: 40px;
-    float: left;
     width: auto;
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -170,7 +189,6 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
 {
     display: block;
     margin-right: 40px;
-    float: right;
     width: auto;
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -184,17 +202,67 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
     height: auto;
     color: white;
     text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .hire-us
 {
     display: flex;
+    color: white;
+    align-items: center;
     justify-content: center;
     margin: 50px auto 0 auto;
     border: 1px solid white;
     border-radius: 3px;
     width: 150px;
-
+    cursor: pointer;
 }
+
+
+a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main-menu
+{
+    margin: 30px 40px 30px 40px;
+    font-size: 1.6em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul[class^="main-menu"] li a:hover
+{
+    color: rgb(28, 151, 160);
+}
+ul[class^="icons"] li a:hover
+{
+    color: rgb(28, 151, 160);
+}
+div[class^="left-aim"]:hover 
+{
+    border: 1px solid rgb(28, 151, 160);
+    background-color: rgb(28, 151, 160);
+}
+div[class^="right-aim"]:hover 
+{
+    border: 1px solid rgb(28, 151, 160);
+    background-color: rgb(28, 151, 160);
+}
+#aim:hover
+{
+    color: whitesmoke;
+} 
+div[class^="hire-us"]:hover
+{
+    background: whitesmoke;
+}
+div[class^="main-info"] a button:hover
+{
+    border: 1px solid rgb(28, 151, 160);
+    background-color: rgb(28, 151, 160);
+    color:whitesmoke;
+}
+
 
 .collumns-one
 {
@@ -210,6 +278,7 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
     width: 50%;
     height: 35rem;
     float: left;
+    background-color: whitesmoke;
 }
 
 .service
@@ -250,6 +319,8 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
     width: 100%;
     height: 20rem;
     background-color: rgb(61, 61, 61);
+    font-size: 0.8em;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .feed-description
 {
@@ -277,11 +348,10 @@ div[class^="clients"] div[class^="head-text-left"] hr[class^="line-widht"]
 }
 .clients-main
 {
-    display: block;
+    display: grid;
     width: 100%;
-    height: 40rem;
-    background-image: url(https://ilenta.com/netcat_files/445/315/partner_logos_complete620.jpg);
-    background-size: cover;
+    grid-template-rows: repeat(2, 20rem);
+    grid-template-columns: repeat(5, auto);
 }
 .about
 {
@@ -310,7 +380,7 @@ hr
 .text-collumns
 {
     font-size: 1.4rem;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .button-collumns
 {
@@ -323,6 +393,12 @@ hr
     border-radius: 3px;
     background-color:  rgb(28, 151, 160);
 }
+.button-collumns:hover
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(28, 151, 160);
+    color:rgb(28, 151, 160);
+}
 .button-services
 {
     display: flex;
@@ -331,10 +407,16 @@ hr
     margin-top: 55px;
     width: 200px;
     font-size: 1em;
-    color: white;
+    color: whitesmoke;
     border-radius: 3px;
     background-color:  rgb(109, 109, 109);
 }
+.button-services:hover
+{
+    background-color: whitesmoke;
+    color: rgb(70, 70, 70);
+}
+
 .head-text-left
 {
     display: block;
@@ -401,6 +483,11 @@ div[class^="about"] h2
     width: 100%;
     text-align: center;
 }
+div[class^="aims"] a:hover
+{
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
 .icon-left-open
 {
     float: left;
@@ -409,43 +496,53 @@ div[class^="about"] h2
 {
     float: right;
 }
-#img
+.img-feed
 {
     display: inline-block;
     margin: 0 30px 0 30px;
     width: 230px;
     height: 280px;
-    background-image: url(https://static.wikia.nocookie.net/zlodei/images/9/9c/Darth_vader_lightsaber-11326.jpg/revision/latest/top-crop/width/360/height/450?cb=20140719020038&path-prefix=ru);
+    background-image: url(https://riotpixels.net/wp/wp-content/uploads/2019/06/Star-Wars-Jedi_Fallen-Order_25-06-19.png);
 }
-#into-img
+.into-img
 {
+    display: flex;
+    align-items: center;
     margin: 220px 0 5px 10px;
 }
-#into-img-1
+.into-img-1
 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+    padding: 15px 0 15px 0;
     margin-right: 5px;
     width: 50px;
-    height: 50px;
+    height: auto;
     background: whitesmoke;
     color: black;
+    font-family: 'Noto Sans TC', sans-serif;
 }
-#into-img-2
+.into-img-2
 {
-    display: inline-block;
+    display: block;
     text-align: center;
+    padding: 14px 0 15px 0;
     width: 150px;
-    height: 50px;
+    height: auto;
     background: whitesmoke;
     color: black;
+    
 }
-#p-img
+.p-img
 {
     float: left;
+    font-size: 1.1em;
 }
 
+button
+{
+    font-family: 'Noto Sans KR', sans-serif;
+}
 .call-line
 {
     display: inline-block;
@@ -467,11 +564,15 @@ div[class^="call-text"] p[class^="p-call"]
 {
     margin-top: 25px;
 }
+button[class^="button-call"]:hover
+{
+    color:  rgb(28, 151, 160);
+}
 .get-call
 {
     display: block;
     float: right;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 input, button
 {
@@ -498,19 +599,183 @@ input
 {
     border-radius: 0;
 }
-button
+.button-call
 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2px;
     margin-left: -5px;
     font-size: 1.1em;
     border: 1px solid whitesmoke;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: whitesmoke;
-    color:  rgb(28, 151, 160);
+    color: rgb(51, 51, 51);
     width: 100px;
     height: 62px;
     cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+div[class^="clients-main"] div
+{
+    border: 1px solid rgb(82, 82, 82);
+}
+
+#one
+{
+    background: url(https://static-cdn3.vigbo.tech/u24777/81314/blog/5194990/4473604/57807671/1000-35f4dca395169ff38abb829b3612b9af.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#two
+{
+    background: url(https://www.tdportal.ru/upload/iblock/f00/f0034c47bb5f08b2a91506327fc9f898.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#three
+{
+    background: url(https://eservice.od.ua/wp-content/uploads/2016/05/intel-vector-logo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#four
+{
+    background: url(https://fontmeme.com/images/Nvidia-Logo.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#five
+{
+    background: url(https://i1.wp.com/itc.ua/wp-content/uploads/2019/02/Samsung_logo_transparent-2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#six
+{
+    background: url(https://cdn.worldvectorlogo.com/logos/asus-6630.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#seven
+{
+    background: url(https://expandedramblings.com/wp-content/uploads/2017/11/adobe-facts-statistics.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#eight
+{
+    background: url(https://www.channelfutures.com/files/2014/12/ibm2000_0.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#nine
+{
+    background: url(https://brandwiki.ru/up/brands/sony.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ten
+{
+    background: url(https://www.pkgid.ru/upload/000/u1/44/7d/u-microsoft-izmenilsja-logotip-photo-big.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foot-text
+{
+    color: whitesmoke;
+    margin-right: 250px;
+}
+div[class^="foot-text"] h3
+{
+    text-align: left;
+    margin: 0 0 2px 0;
+    font-size: 1.6em;
+}
+div[class^="foot-text"] hr
+{
+    float: left;
+    width: 50px;
+    color: whitesmoke;
+}
+div[class^="foot-text"] ul li
+{
+    margin-top: 25px;
+    font-size: 1.3em;
+}
+div[class^="foot-text"] div
+{
+    width: auto;
+    display: inline-block;
+    margin-right: 125px;
+}
+#email-sub
+{
+    border-color: rgb(192, 192, 192);
+    background-color:  rgb(192, 192, 192);
+    color: rgb(51, 51, 51);
+}
+.button-sub
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    font-size: 1.1em;
+    border: 1px solid rgb(28, 151, 160);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(28, 151, 160);
+    color: whitesmoke;
+    width: 100px;
+    height: 62px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+button[class^="button-sub"]:hover
+{
+    color:  rgb(51, 51, 51);
+}
+form[action^="sub"]
+{
+    width: auto;
+    margin-bottom: 80px;
+}
+address a
+{
+    font-size: 3em;
+    color: whitesmoke;
+}
+address a:hover
+{
+    color:  rgb(28, 151, 160);
+}
+div[class^="foot-text"] li a:hover
+{
+    color: rgb(28, 151, 160);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+}
+input[type='number']
+{
+    -moz-appearance: textfield;
 }
