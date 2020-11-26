@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> 
+    <script src="js/script.js"></script>
+    <script>
+        alert("Загрузка данных...")
+    </script>
 </head>
-<body>
+<body onload="BeforeEnter()">
     <header>
         <div class="logo">
             <p>LO</p>
@@ -74,7 +78,7 @@
 
         <div class="main-two-collumns">
             <div class="collumns-one">
-                <img src="img/Write.png" alt="Рука пишет" width="100%" height="100%">
+                <img onmouseover="change_img()" onmouseout="change_img_after()" src="img/Write.png" alt="Рука пишет" width="100%" height="100%" id="write-hand">
             </div>
             <div class="collumns-two">
                 <div class="about">
@@ -232,17 +236,17 @@
                     <hr class="client-head-line">
                 </div>
             </div>
-            <div class="clients-main">
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
-                <div id="four"></div>
-                <div id="five"></div>
-                <div id="six"></div>
-                <div id="seven"></div>
-                <div id="eight"></div>
-                <div id="nine"></div>
-                <div id="ten"></div>
+            <div class="clients-logo">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://www.nettl.com/uk/wp-content/uploads/2019/06/Cisco-logo-900.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://www.tdportal.ru/upload/iblock/f00/f0034c47bb5f08b2a91506327fc9f898.png" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://toplogos.ru/images/logo-intel.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://fontmeme.com/images/Nvidia-Logo.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://i1.wp.com/itc.ua/wp-content/uploads/2019/02/Samsung_logo_transparent-2.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://4dealer.ru/static/vendors/3fdd160d2813763ce9069efb72b99073.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://expandedramblings.com/wp-content/uploads/2017/11/adobe-facts-statistics.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://www.channelfutures.com/files/2014/12/ibm2000_0.jpg" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://brandwiki.ru/up/brands/sony.png" alt="" id="img-clients">
+                <img onmouseover="resize_image()" onmouseout="resize_image_after()" src="https://www.pkgid.ru/upload/000/u1/44/7d/u-microsoft-izmenilsja-logotip-photo-big.jpg" alt="" id="img-clients">
             </div>
         </div>
 
@@ -258,9 +262,9 @@
             </div>
             <div class="get-call">
                 <form action="call">
-                    <input type="text" placeholder="Your name">
+                    <input id="name-input" type="text" placeholder="Your name">
                     <input id="second-call" type="number" placeholder="Your number">
-                    <button class="button-call" type="submit">Get a call</button>
+                    <button class="button-call" type="button" onclick="ButtonClickCall()">Get a call</button>
                 </form>
             </div>
         </div>
@@ -327,7 +331,7 @@
         <div>
             <form action="sub">
                 <input id="email-sub" type="email" placeholder="Your email">
-                <button class="button-sub" type="submit">Subcribe</button>
+                <button class="button-sub" type="submit" onclick="ButtonClickEmail()">Subcribe</button>
             </form>
             <address>
                 <a href="#" class="icon-facebook-circled"></a>

@@ -1,3 +1,7 @@
+html
+{
+    background-color: rgb(236, 236, 236);
+}
 body
 {
     margin: 0;
@@ -85,12 +89,14 @@ div[class^="logo"]
 {
     display: block;
     height: 50rem;
+    background-color: rgb(236, 236, 236);
 }
 .main-call
 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 120px;
     height: 12rem;
     color: white;
     background-color: rgb(28, 151, 160);
@@ -346,10 +352,11 @@ div[class^="main-info"] a button:hover
     height: 10rem;
     background-color: whitesmoke;
 }
-.clients-main
+.clients-logo
 {
+    padding-top: 30px;
     display: grid;
-    width: 100%;
+    width: 99.95%;
     grid-template-rows: repeat(2, 20rem);
     grid-template-columns: repeat(5, auto);
 }
@@ -525,17 +532,16 @@ div[class^="aims"] a:hover
 .into-img-2
 {
     display: block;
-    text-align: center;
-    padding: 14px 0 15px 0;
+    padding-top: 5px;
+    padding-left: 5px;
     width: 150px;
-    height: auto;
+    height: 44px;
     background: whitesmoke;
     color: black;
     
 }
 .p-img
 {
-    float: left;
     font-size: 1.1em;
 }
 
@@ -581,7 +587,7 @@ input, button
 }
 input
 {
-    display: inline-flex;
+    display: inline-block;
     padding: 0;
     margin-left: -5px;
     align-items: center;
@@ -601,13 +607,13 @@ input
 }
 .button-call
 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2px;
-    margin-left: -5px;
-    font-size: 1.1em;
+    display: inline-block;
+    margin: 0;
+    margin-left: -4px;
+    font-size: 0.9em;
     border: 1px solid whitesmoke;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: whitesmoke;
@@ -615,84 +621,14 @@ input
     width: 100px;
     height: 62px;
     cursor: pointer;
-    font-size: 0.9em;
 }
 
 
-div[class^="clients-main"] div
+div[class^="clients-logo"] img
 {
-    border: 1px solid rgb(82, 82, 82);
-}
-
-#one
-{
-    background: url(https://static-cdn3.vigbo.tech/u24777/81314/blog/5194990/4473604/57807671/1000-35f4dca395169ff38abb829b3612b9af.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#two
-{
-    background: url(https://www.tdportal.ru/upload/iblock/f00/f0034c47bb5f08b2a91506327fc9f898.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#three
-{
-    background: url(https://eservice.od.ua/wp-content/uploads/2016/05/intel-vector-logo.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#four
-{
-    background: url(https://fontmeme.com/images/Nvidia-Logo.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#five
-{
-    background: url(https://i1.wp.com/itc.ua/wp-content/uploads/2019/02/Samsung_logo_transparent-2.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#six
-{
-    background: url(https://cdn.worldvectorlogo.com/logos/asus-6630.svg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#seven
-{
-    background: url(https://expandedramblings.com/wp-content/uploads/2017/11/adobe-facts-statistics.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#eight
-{
-    background: url(https://www.channelfutures.com/files/2014/12/ibm2000_0.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#nine
-{
-    background: url(https://brandwiki.ru/up/brands/sony.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#ten
-{
-    background: url(https://www.pkgid.ru/upload/000/u1/44/7d/u-microsoft-izmenilsja-logotip-photo-big.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    border-right: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .foot-text
@@ -731,11 +667,8 @@ div[class^="foot-text"] div
 }
 .button-sub
 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -5px;
-    font-size: 1.1em;
+    display: inline-block;
+    margin-left: -4px;
     border: 1px solid rgb(28, 151, 160);
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -778,4 +711,9 @@ input::-webkit-inner-spin-button
 input[type='number']
 {
     -moz-appearance: textfield;
+}
+
+form[action^="call"] input::-webkit-input-placeholder
+{
+    color: rgba(255, 255, 255, 0.6);
 }
