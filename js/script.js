@@ -21,28 +21,8 @@ function ButtonClickEmail()
     alert("Вам на почту был отправлен код подтверждения")
 }
 
-function resize_image()
+function Img_Alert()
 {
-    var img = document.getElementById("img-clients");
-    img.style.width="500px";
-}
-function resize_image_after()
-{
-    var img = document.getElementById("img-clients");
-    img.style.width="100%";
+    alert("Картинка")
 }
 
-function change_img()
-{
-    var hand = document.getElementById("write-hand");
-    hand.style.src="http://vsednr.ru/wp-content/uploads/2018/05/bloknot-zhenshhina-pishet.jpg";
-    hand.style.width="100%";
-    hand.style.height="100%";
-}
-function change_img_after()
-{
-    var hand = document.getElementById("write-hand");
-    hand.style.src="img/Write.png";
-    hand.style.width="100%";
-    hand.style.height="100%";
-}
